@@ -23,7 +23,7 @@ docker-compose version 1.29.2, build 5becea4c
 $ git --version
 git version 2.27.0
 ```
-## Clonando e iniciando o projeto
+## Clonando o projeto
 ```
 $ git clone https://github.com/dhiegopereira/palpite-box.git
 ```  
@@ -44,6 +44,14 @@ $ sudo docker stop <CONTAINER ID>
 ## Remover o container do docker
 ```
 $ sudo docker rm <CONTAINER ID>
+```
+## Executar os testes
+```
+$ npm run test
+```
+ou
+```
+$ npm run coverage
 ```
 ## Documentação da API
 * [Postman](https://documenter.getpostman.com/view/3166323/TzXxkJMa)
