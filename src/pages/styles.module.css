@@ -1,0 +1,9 @@
+.text {
+    @apply mt-12 text-center;
+}
+.container_button{
+    @apply text-center my-12;
+}
+.button {
+    @apply bg-blue-400 px-6 py-4 font-bold rounded-lg shadow-lg;
+}
