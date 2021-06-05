@@ -8,20 +8,29 @@
 * [Git](https://git-scm.com/)
 ## Verificar as versões no sistema
 ```
-node -v           
-v12.18.2
+node -v  
+```         
+$ result: v12.18.2
 
-npm -v     
-6.14.8
+```
+npm -v  
+```   
+$ 6.14.8
 
+```
 docker -v
-Docker version 20.10.6, build 370c289
+```
+$ Docker version 20.10.6, build 370c289
 
+```
 docker-compose -v 
-docker-compose version 1.29.2, build 5becea4c
+```
+$ docker-compose version 1.29.2, build 5becea4c
 
+```
 git --version
-git version 2.27.0
+```
+$ git version 2.27.0
 ```
 ## Clonando o projeto
 ```
