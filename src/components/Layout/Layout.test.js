@@ -1,13 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {render, screen} from '@testing-library/react'
-import PageTitle from './PageTitle'
+import Layout from '.'
 
 
 describe('PageTitle Component', () => {
     it('Return title', () => {
         const tree = renderer
-            .create(<PageTitle title="Diego"></PageTitle>)
+            .create(<Layout/>)
             .toJSON();
         expect(tree).toMatchSnapshot();        
     })

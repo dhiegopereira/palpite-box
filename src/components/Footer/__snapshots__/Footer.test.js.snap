@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component Snapshot Footer 1`] = `
+<div
+  className="bg-gray-500 p-4 my-96 absolute w-full"
+>
+  <div
+    className="container mx-auto text-center font-bold text-white"
+  >
+    Projeto desenvolvido por: Diego Pereira /
+    <a
+      className="link hover:underline"
+      href="https://linkedin.com/in/diegopereirati"
+      target="_blank"
+    >
+      Linkedin
+    </a>
+     /
+    <a
+      className="hover:underline"
+      href="https://github.com/dhiegopereira"
+      target="blank"
+    >
+      Github
+    </a>
+  </div>
+  <div
+    className="container mx-auto"
+  >
+    <img
+      alt="PalpiteBox"
+      className="mx-auto"
+      src="/img/logo_scio.png"
+    />
+  </div>
+</div>
+`;

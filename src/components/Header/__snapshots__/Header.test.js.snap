@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Snapshot Header 1`] = `
+<div
+  className="bg-gray-200 p-4  shadow-md"
+>
+  <div
+    className="container mx-auto"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <img
+        alt="PalpiteBox"
+        className="mx-auto"
+        src="/img/logo_palpitebox.png"
+      />
+    </a>
+  </div>
+</div>
+`;
