@@ -29,6 +29,8 @@ git clone https://github.com/dhiegopereira/palpite-box.git
 ```  
 ## Iniciando o projeto
 ```
+cd palpite-box
+npm install
 docker-compose up -d
 ```
 URL para acessar o projeto: http://localhost:3000
