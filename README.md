@@ -8,50 +8,50 @@
 * [Git](https://git-scm.com/)
 ## Verificar as versões no sistema
 ```
-$ node -v           
+node -v           
 v12.18.2
 
-$ npm -v     
+npm -v     
 6.14.8
 
-$ docker -v
+docker -v
 Docker version 20.10.6, build 370c289
 
-$ docker-compose -v 
+docker-compose -v 
 docker-compose version 1.29.2, build 5becea4c
 
-$ git --version
+git --version
 git version 2.27.0
 ```
 ## Clonando o projeto
 ```
-$ git clone https://github.com/dhiegopereira/palpite-box.git
+git clone https://github.com/dhiegopereira/palpite-box.git
 ```  
 ## Iniciando o projeto
 ```
-$ docker-compose up -d
+docker-compose up -d
 ```
 URL para acessar o projeto: http://localhost:3000
 
 ## Visualizar os containers do docker iniciados
 ```
-$ sudo docker ps
+sudo docker ps
 ```
 ## Parar o container do docker
 ```
-$ sudo docker stop <CONTAINER ID>
+sudo docker stop <CONTAINER ID>
 ```
 ## Remover o container do docker
 ```
-$ sudo docker rm <CONTAINER ID>
+sudo docker rm <CONTAINER ID>
 ```
 ## Executar os testes
 ```
-$ npm run test
+npm run test
 ```
 ou
 ```
-$ npm run coverage
+npm run coverage
 ```
 ## Documentação da API
 * [Postman](https://documenter.getpostman.com/view/3166323/TzXxkJMa)
