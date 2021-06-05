@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest --env=jsdom",
     "coverage": "jest --env=jsdom --coverage",
-    "dev": "next ./src",
-    "start": "next start ./src",
+    "dev": "next src",
+    "start": "next start src",    
     "build": "next build ./src"
   },
   "keywords": [],
