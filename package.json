@@ -1,7 +1,7 @@
 {
-  "name": "palpite-box",
+  "name": "suggestion-box",
   "version": "1.0.0",
-  "description": "Projeto prático da Scio Tech",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --env=jsdom",
@@ -11,20 +11,33 @@
     "build": "next build ./src"
   },
   "keywords": [],
-  "author": "Diego Pereira",
+  "author": "Diego Pereira (devscript.com.br)",
   "license": "MIT",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "core-js": "^3.13.1",
     "google-spreadsheet": "^3.1.15",
     "moment": "^2.29.1",
-    "next": "^10.2.3",
+    "next": "^10.2.0",
     "postcss": "^8.3.0",
     "postcss-import": "^14.0.2",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "swr": "^0.5.6",
-    "tailwindcss": "^2.1.4"
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.13.0",
-    "jest": "^27.0.4"
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@testing-library/react": "^11.2.7",
+    "autoprefixer": "^10.2.5",
+    "istanbul": "^0.4.5",
+    "jest": "^27.0.4",
+    "knuth-shuffle": "^1.0.8",
+    "postcss": "^8.3.0",
+    "react-test-renderer": "^17.0.2",
+    "tailwindcss": "^2.1.2"
   }
 }
