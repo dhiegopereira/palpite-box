@@ -31,7 +31,7 @@ $ docker-compose version 1.29.2, build 5becea4c
 git --version
 ```
 $ git version 2.27.0
-```
+
 ## Clonando o projeto
 ```
 git clone https://github.com/dhiegopereira/palpite-box.git
@@ -64,16 +64,21 @@ ou
 ```
 npm run coverage
 ```
+
 ## Documentação da API
 * [Postman](https://documenter.getpostman.com/view/3166323/TzXxkJMa)
+
 ## Protótipo dada aplicação
 * [Figma](https://www.figma.com/file/NkezH1oiWFkXijx2cfyRXu/Palpite-Box?node-id=0%3A1)
+
 ## Aplicação desenvolvida com as seguintes tecnologias
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [Next](https://nextjs.org/) - The React Framework for Production
 * [Tailwind](https://tailwindcss.com) - Rapidly build modern websites without ever leaving your HTML.engine.
 * [dockeSpreadsheet](https://console.cloud.google.com/apis/) -The Sheets API gives you full control over the content and appearence of your spreadsheet data. 
+
 ## Autor:
 * **Diego Pereira** - [LinkedIn](https://www.linkedin.com/in/diegopereirati/)
+
 ## Licença
 This project is licensed under the MIT license - see [LICENSE.md](LICENSE.md) for more information.
