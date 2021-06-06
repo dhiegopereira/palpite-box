@@ -1,7 +1,7 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet')
 const { fromBase64 } = require('./base64')
+const logger  = require('./logger').logger(__filename)
 require("dotenv").config()
-
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
 const run = async() => {
@@ -11,9 +11,11 @@ const run = async() => {
             private_key: fromBase64(process.env.SHEET_PRIVATE_KEY)
         })
         await doc.loadInfo()
-        console.log(doc)
+        logger.info(`spreadsheetId: ${doc.spreadsheetId}`)
+        logger.info(`title: ${doc._rawProperties.title}`)
+        logger.info(`email: ${doc.jwtClient.email}`)
     } catch(error){
-        console.log(error)
+        logger.error(error)
     }    
 }
 run()

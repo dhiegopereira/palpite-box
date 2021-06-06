@@ -1,6 +1,7 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 import moment from 'moment'
 import { fromBase64 } from '../../utils/base64'
+import { logger }  from '../../utils/logger' 
 
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
@@ -33,8 +34,7 @@ export default async(req, res) => {
         Promo = messageOnline.value
       }
 
-      //Nome	Email	Whatsapp	Cumpo	Promo
-      await sheet.addRow({
+      let data = {
         Nome: data.Nome,
         Email: data.Email,
         Whatsapp: data.Whatsapp,
@@ -43,13 +43,20 @@ export default async(req, res) => {
         Cupom,
         Promo,
         'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss')
-      })
-      res.end(JSON.stringify({
+      }
+      logger('get-promo.js').info(`Inseridno dados: ${JSON.stringify(data)}`)
+      await sheet.addRow(data)
+
+      data = {
         showCoupon: Cupom !== '',
         Coupon: Cupom, 
         Promotion: Promo
-      }))
+      }
+      logger('get-promo.js').info(`Send: ${JSON.stringify(data)}`)
+      res.end(JSON.stringify(data))
+      
     } catch (error) {
+      logger('post-save.js').error(error)
       res.end(error)
     }
   }
