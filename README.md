@@ -68,8 +68,11 @@ npm run coverage
 ## Documentação da API
 * [Postman](https://documenter.getpostman.com/view/3166323/TzXxkJMa)
 
-## Protótipo dada aplicação
+## Protótipo da aplicação
 * [Figma](https://www.figma.com/file/NkezH1oiWFkXijx2cfyRXu/Palpite-Box?node-id=0%3A1)
+
+## Aplicação em produção no Vercel
+* [PalpiteBox](https://palpite-box-scio.vercel.app/)
 
 ## Aplicação desenvolvida com as seguintes tecnologias
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
