@@ -68,6 +68,10 @@ npm run coverage
 ## Documentação da API
 * [Postman](https://documenter.getpostman.com/view/3166323/TzXxkJMa)
 
+## Documentação do Projeto
+* [Documento 1](https://docs.google.com/document/d/1JqSWPLcQHOcA5OkZiEksI8L9P0oiv8mWb1ZyXBw4l98/edit?usp=sharing)
+* [Documento 2](https://docs.google.com/document/d/1a772eOpxEgS1yRTfN2ijxwn2tjmgAhVl8_3EHfdd_TA/edit?usp=sharing)
+
 ## Protótipo da aplicação
 * [Figma](https://www.figma.com/file/NkezH1oiWFkXijx2cfyRXu/Palpite-Box?node-id=0%3A1)
 
