@@ -18,9 +18,7 @@ export default async(req, res) => {
         private_key: fromBase64(process.env.SHEET_PRIVATE_KEY)
       })
       await doc.loadInfo()    
-      const sheet = doc.sheetsByIndex[1]      
-      const data = JSON.parse(req.body)
-      console.log(data)
+      const sheet = doc.sheetsByIndex[1]   
       const sheetConfig = doc.sheetsByIndex[2]
       await sheetConfig.loadCells('A3:B3')
 
@@ -34,26 +32,26 @@ export default async(req, res) => {
         Promo = messageOnline.value
       }
 
-      let data = {
-        Nome: data.Nome,
-        Email: data.Email,
-        Whatsapp: data.Whatsapp,
-        Nota: parseInt(data.Nota),
-        Palpite: data.Palpite,
+      const data = {
+        Nome: req.body.Nome,
+        Email: req.body.Email,
+        Whatsapp: req.body.Whatsapp,
+        Nota: parseInt(req.body.Nota),
+        Palpite: req.body.Palpite,
         Cupom,
         Promo,
         'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss')
       }
-      logger('get-promo.js').info(`Inseridno dados: ${JSON.stringify(data)}`)
+      logger('post-save.js').info(`Inseridno dados: ${JSON.stringify(data)}`)
       await sheet.addRow(data)
 
-      data = {
+      const send = {
         showCoupon: Cupom !== '',
         Coupon: Cupom, 
         Promotion: Promo
       }
-      logger('get-promo.js').info(`Send: ${JSON.stringify(data)}`)
-      res.end(JSON.stringify(data))
+      logger('post-save.js').info(`Send: ${JSON.stringify(send)}`)
+      res.end(JSON.stringify(send))
       
     } catch (error) {
       logger('post-save.js').error(error)
